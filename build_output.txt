@@ -1,0 +1,25 @@
+Processing nucleo_g431rb (platform: ststm32; board: nucleo_g431rb; framework: stm32cube)
+--------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/ststm32/nucleo_g431rb.html
+PLATFORM: ST STM32 (19.6.0) > Nucleo G431RB
+HARDWARE: STM32G431RBTX 170MHz, 32KB RAM, 128KB Flash
+DEBUG: Current (stlink) On-board (stlink) External (blackmagic, cmsis-dap, jlink)
+PACKAGES: 
+ - framework-stm32cubeg4 @ 1.6.1 
+ - tool-ldscripts-ststm32 @ 0.2.0 
+ - toolchain-gccarmnoneeabi @ 1.70201.0 (7.2.1)
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Library Manager: Installing CMSIS-DSP
+Warning! Could not find the package with 'CMSIS-DSP' requirements
+Found 23 compatible libraries
+Scanning dependencies...
+No dependencies
+Building in release mode
+=== Hard-Float FPU Flags Added ===
+Checking size .pio\build\nucleo_g431rb\firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [=         ]   6.3% (used 2056 bytes from 32768 bytes)
+Flash: [=         ]  11.4% (used 14972 bytes from 131072 bytes)
+========================= [SUCCESS] Took 2.41 seconds =========================

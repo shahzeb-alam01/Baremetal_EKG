@@ -1,0 +1,56 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Pre-Debug",
+            "type": "shell",
+            "command": "C:\\Users\\Window\\.platformio\\penv\\Scripts\\platformio.exe",
+            "args": ["run", "-e", "stm32g431cb_debug"],
+            "isBackground": false,
+            "problemMatcher": "$platformio",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "PlatformIO Build",
+            "type": "shell",
+            "command": "C:\\Users\\Window\\.platformio\\penv\\Scripts\\platformio.exe",
+            "args": ["run", "-e", "stm32g431cb"],
+            "isBackground": false,
+            "problemMatcher": "$platformio",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "PlatformIO Debug Build",
+            "type": "shell",
+            "command": "C:\\Users\\Window\\.platformio\\penv\\Scripts\\platformio.exe",
+            "args": ["run", "-e", "stm32g431cb_debug"],
+            "isBackground": false,
+            "problemMatcher": "$platformio",
+            "group": "build"
+        },
+        {
+            "label": "PlatformIO Upload",
+            "type": "shell",
+            "command": "C:\\Users\\Window\\.platformio\\penv\\Scripts\\platformio.exe",
+            "args": ["run", "-e", "stm32g431cb", "-t", "upload"],
+            "isBackground": false,
+            "problemMatcher": "$platformio",
+            "group": "build"
+        },
+        {
+            "label": "PlatformIO Debug Upload",
+            "type": "shell",
+            "command": "C:\\Users\\Window\\.platformio\\penv\\Scripts\\platformio.exe",
+            "args": ["run", "-e", "stm32g431cb_debug", "-t", "upload"],
+            "isBackground": false,
+            "problemMatcher": "$platformio",
+            "group": "build"
+        }
+    ]
+}
